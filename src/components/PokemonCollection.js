@@ -5,8 +5,9 @@ import { Card } from 'semantic-ui-react'
 function PokemonCollection(props) {
 
 
-  const renderPokemonCard = () => {
-    return props.arrayOfPokemon.map(pokemonObj => {
+  const filteredRenderPokemonCard = () => {
+    let filteredArray = props.arrayOfPokemon.filter(pokeEl => pokeEl.name.toLowerCase().includes(props.searchTerm.toLowerCase()))
+    return filteredArray.map(pokemonObj => {
       return <PokemonCard key={pokemonObj.id} pokeObj={pokemonObj} />
     })
 
@@ -15,7 +16,7 @@ function PokemonCollection(props) {
     return (
       <Card.Group itemsPerRow={6}>
         <h1>Hello From Pokemon Collection</h1>
-        {renderPokemonCard()}
+        {filteredRenderPokemonCard()}
       </Card.Group>
     )
   }

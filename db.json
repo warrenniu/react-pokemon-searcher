@@ -1340,6 +1340,50 @@
         "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
         "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/150.png"
       }
+    },
+    {
+      "name": "Flaming Hot Ramen",
+      "hp": "50",
+      "sprites": {
+        "frontUrl": "",
+        "backUrl": ""
+      },
+      "backUrl": {
+        "frontUrl": "\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png\"",
+        "backUrl": "\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png\""
+      },
+      "frontUrl": {
+        "frontUrl": "\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png\"",
+        "backUrl": "\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png\""
+      },
+      "id": 151
+    },
+    {
+      "name": "Bulbasaur",
+      "hp": "50",
+      "sprites": {
+        "frontUrl": "\"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png\"",
+        "backUrl": ""
+      },
+      "id": 152
+    },
+    {
+      "name": "Bulbasaur",
+      "hp": "50",
+      "sprites": {
+        "frontUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+        "backUrl": ""
+      },
+      "id": 153
+    },
+    {
+      "name": "Bulbasaur",
+      "hp": "30",
+      "sprites": {
+        "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+        "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png"
+      },
+      "id": 154
     }
   ]
 }

@@ -18,21 +18,21 @@ class PokemonPage extends React.Component {
       ))
   }
 
-  // createFormHandler = (pokeObj) => {
-  //   console.log("In PokePage", pokeObj)
-  //   fetch('http://localhost:4000/pokemon', {
-  //     method: 'POST',
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //     },
-  //     body: JSON.stringify(pokeObj),
-  //   })
-  //     .then(response => response.json())
-  //     .then(newPokeObj => this.setState(
-  //       { arrayOfPokemon: [newPokeObj, ...this.state.arrayOfPokemon] }
-  //     ))
+  createFormHandler = (pokeObj) => {
+    console.log("In PokePage", pokeObj)
+    fetch('http://localhost:4000/pokemon', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(pokeObj),
+    })
+      .then(response => response.json())
+      .then(newPokeObj => this.setState(
+        { arrayOfPokemon: [newPokeObj, ...this.state.arrayOfPokemon] }
+      ))
 
-  // }
+  }
 
   searchChangeHandler = (event) => {
     this.setState({searchTerm: event.target.value})
@@ -48,7 +48,7 @@ class PokemonPage extends React.Component {
         <br />
         <Search searchTerm={this.state.searchTerm} changeHandler={this.searchChangeHandler} />
         <br />
-        <PokemonCollection arrayOfPokemon={this.state.arrayOfPokemon} />
+        <PokemonCollection arrayOfPokemon={this.state.arrayOfPokemon} searchTerm={this.state.searchTerm} />
       </Container>
     )
   }
