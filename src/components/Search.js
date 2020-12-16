@@ -4,7 +4,7 @@ const Search = props => {
   return (
     <div className="ui search">
       <div className="ui icon input">
-        <input className="prompt"/>
+        <input type="text" value={props.searchTerm} onChange={props.changeHandler} className="prompt"/>
         <i className="search icon" />
       </div>
     </div>
